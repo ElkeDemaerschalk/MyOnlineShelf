@@ -1,55 +1,95 @@
 <!DOCTYPE html>
 <html lang="eng">
-  <style>
+    <head>
+        <title>My Online Bookshelf</title>
+        <style>
+            #pre:link,
+            a:visited {
+              background-color: #f44336;
+              color: black;
+              padding: 14px 25px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+            }
 
-    #pre:link, a:visited {
-  background-color: #f44336;
-  color: black;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
+            .a:hover,
+            a:active {
+              background-color: deeppink;
+            }
 
-.a:hover, a:active {
-  background-color: deeppink;
-}
-    #body{
-      background-color: lightpink;
-      opacity: 0.8; 
+            #body {
+              background-color: lightpink;
+              opacity: 0.8;
+            }
 
-    }
+            #logo {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
 
-    #logo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-      
-    }
+            #list{
+                display: flex;
+                gap: 50px;
+                justify-content: center
+            }
+
+            .genres {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
 
 
-  </style>
+            #h2{
+                font-size: 20px
+            }
 
-  <title>My Online Bookshelf</title>
-  <body id="body">
+        </style>
+    </head>
+
+    <body id="body">
     <div id="logo">
-      <img src="LogoBook.jpg" alt="LogoBook" class="center" width="900" height="400">
+        <img
+                src="LogoBook.jpg"
+                alt="LogoBook"
+                class="center"
+                width="900"
+                height="400"
+        />
     </div>
-  <h1> </h1>
-    <pre><ul style="list-style-type:circle;">
-   Fantasy        Manga        Classics 
 
-   Romance        Thriller     Fiction
+    <h1></h1>
 
-   Young adult    Mystery     Non-Fiction
-</ul></pre>
+    <div id="list">
+        <ul class="genres">
+            <li>Romance</li>
+            <li>Thriller</li>
+            <li>Manga</li>
+        </ul>
+        <ul class="genres">
+            <li>Fantasy</li>
+            <li>Mystery</li>
+            <li>Fiction</li>
+        </ul>
+        <ul class="genres">
+            <li>Young Adult</li>
+            <li>Classics</li>
+            <li>Non-fiction</li>
+        </ul>
+    </div>
 
-  <h2>A place to share your reviews and your reading plans with other book lovers.</h2>
+    <h2 id="h2">
+        A place to share your reviews and your reading plans with other book
+        lovers.
+    </h2>
 
-    <h2>links to my socials below:</h2>
+
+
     <pre>
-      <a class="a" href="https://linktr.ee/Bookmarkgirl">Linktree</a>
-      <a class="a" href="https://www.tiktok.com/@bookmarkgirl4">Tiktok</a></pre>
-    
-  </body>
+          <a class="a" href="https://linktr.ee/Bookmarkgirl">Linktree</a>
+          <a class="a" href="https://www.tiktok.com/@bookmarkgirl4">Tiktok</a>
+        </pre>
+    </body>
 </html>
